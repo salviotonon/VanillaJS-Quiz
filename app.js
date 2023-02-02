@@ -43,9 +43,9 @@ const calculateResult = (event) => {
 };
 
 const handleFeedbackPerformanceQuiz = (scorePercentage, score) => {
-  const excelentResult = `Parabéns! Você alcançou um desempenho incrível com ${scorePercentage}% de acertos, acertando ${score} de ${answerInputs.length} questões. Você é um verdadeiro campeão! Continue assim!`;
-  const greatResult = `Parabéns! Você alcançou um desempenho muito bom com ${scorePercentage}% de acertos, acertando ${score} de ${answerInputs.length} questões. Continue assim!`;
-  const goodResult = `Parabéns! Você obteve um bom resultado com ${scorePercentage}% de acertos, acertando ${score} de ${answerInputs.length} questões. Mantenha o bom trabalho e você alcançará resultados ainda melhores em breve!`;
+  const excelentResult = `Você alcançou um desempenho incrível com ${scorePercentage}% de acertos, acertando ${score} de ${answerInputs.length} questões. Você é um verdadeiro campeão! Continue assim!`;
+  const greatResult = `Você alcançou um desempenho muito bom com ${scorePercentage}% de acertos, acertando ${score} de ${answerInputs.length} questões. Continue assim!`;
+  const goodResult = `Você obteve um bom resultado com ${scorePercentage}% de acertos, acertando ${score} de ${answerInputs.length} questões. Mantenha o bom trabalho e você alcançará resultados ainda melhores em breve!`;
   const poorResult = `Parabéns por se esforçar! Você obteve ${scorePercentage}% de acertos, acertando ${score} de ${answerInputs.length} questões. Não se preocupe, continue praticando e você verá seu desempenho melhorar a cada dia.`;
   const noShowResult = `Ops! Você não obteve um resultado satisfatório.Não se preocupe, continue praticando e você verá seu desempenho melhorar a cada dia.`;
 
