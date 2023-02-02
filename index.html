@@ -6,37 +6,88 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <title>
-      Quiz | Você consegue acertar qual é o filme pelo título em português de
-      Portugal?
-    </title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz | Você conhece Vanilla JS?</title>
   </head>
   <body>
-    <div class="intro py-3 bg-primary text-center">
+    <div class="intro py-4 my-4 bg-white text-center">
       <div class="container">
-        <h2 class="text-light display-3 my-4">Quiz</h2>
+          <a href="http://vanilla-js.com/" class="easterEggs" target="_blank" title="É chamado de Vanilla porque é puro JavaScript sem nenhum sabor adicional, assim como a baunilha é uma baunilha pura sem adição de outros sabores.">
+              <div style="background-image: url('http://vanilla-js.com/assets/vanillin-chemstruct.png');height: 150px; opacity: .5; background-repeat: no-repeat; background-position: center ">
+                <h2 class="display-3 my-4" style="font-weight: 100;line-height: 140px;font-size: 3rem;font-family: cursive; color: #F3E5AB; text-shadow: 0 0 2px #333333, 0 0 4px #333333; ">Vanilla JS</h2>
+            </div>
+        </a>
       </div>
     </div>
 
-    <div class="quiz py-4 bg-dark">
+    <div class="quiz py-5 bg-body-secondary">
       <div class="container">
-        <h2 class="my-5 text-white">
-          Você consegue acertar qual é o filme pelo título em português de
-          Portugal?
-        </h2>
+     <div class="d-flex justify-content-center">
+        <button
+        type="button"
+        class="btn btn-warning btn-lg"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Teste seu conhecimento de Vanilla JS
+      </button>
+     </div>
 
-        <form class="quiz-form text-light">
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-5"
+                  id="exampleModalLabel"
+                >
+                  VanillaJS Quiz
+                </h1>
+              </div>
+              <div class="modal-body">
+                <h5>Este projeto foi desenvolvido no curso CJRM</h3>
+                <p>Objetivo deste projeto é aprender sobre funcionalidades do javascript puro, alguma das habilidades necessárias para concluir o projeto:</p>
+                <ol>
+                    <li>Manipulação de eventos em formulário e inputs</li>
+                    <li>Callbacks utilizadas nas iterações de arrays e eventos de clicks</li>
+                    <li>Manipulação do DOM</li>
+                    <li>Lógica de programação para fazer a aplicação funcionar</li>
+                    <li>conhecimento sobre Assessores de propriedade de colchetes </li>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  id="startedQuiz"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Começar !
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="quiz-form intro py-3 bg-body-secondary">
           <div class="my-5">
-            <p class="lead font-weight-normal">
-              1. "O Mal Disposto" é o nome dado para o filme:
+            <p class="lead font-weight-normal text-dark">
+              1. Qual é a utilidade do Vanilla JS?
             </p>
-            <div class="form-check my-2 text-white-50">
+            <div class="form-check my-2 text-dark">
               <label class="form-check-label">
                 <input
                   type="radio"
@@ -44,26 +95,47 @@
                   value="A"
                   checked
                 />
-                Psicose
+                Desenvolvimento de sites e aplicativos
               </label>
             </div>
-            <div class="form-check my-2 text-white-50">
+            <div class="form-check my-2 text-dark">
               <label class="form-check-label">
                 <input
                   type="radio"
                   name="inputQuestion1"
                   value="B"
                 />
-                Meu Malvado Favorito
+                Design gráfico
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion1"
+                  value="C"
+                />
+                Otimo para criar projetos de arquitetura
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion1"
+                  value="D"
+                />
+                Uma linguagem de programação 100% "back-end"
               </label>
             </div>
           </div>
 
           <div class="my-5">
             <p class="lead font-weight-normal">
-              2. "O Aviso" é o nome dado para o filme de terror:
+              2. Qual é a principal diferença entre o Vanilla JS e outras
+              bibliotecas/frameworks JS?
             </p>
-            <div class="form-check my-2 text-white-50">
+            <div class="form-check my-2 text-dark">
               <label class="form-check-label">
                 <input
                   type="radio"
@@ -71,26 +143,48 @@
                   value="A"
                   checked
                 />
-                O Grito
+                Não há nenhuma diferença
               </label>
             </div>
-            <div class="form-check my-2 text-white-50">
+            <div class="form-check my-2 text-dark">
               <label class="form-check-label">
                 <input
                   type="radio"
                   name="inputQuestion2"
                   value="B"
                 />
-                O Chamado
+                O Vanilla JS é mais lento e menos funcional
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion2"
+                  value="C"
+                />
+                O Vanilla JS foi descontinuado, somente em atividade no Windows
+                98 e versões anteriores
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion2"
+                  value="D"
+                />
+                O Vanilla JS é um framework muito antigo
               </label>
             </div>
           </div>
 
           <div class="my-5">
             <p class="lead font-weight-normal">
-              3. "Uma Família a Beira de um Ataque de Nervos" é o título de:
+              3. Qual é a forma correta de selecionar um elemento HTML com o
+              Vanilla JS?
             </p>
-            <div class="form-check my-2 text-white-50">
+            <div class="form-check my-2 text-dark">
               <label class="form-check-label">
                 <input
                   type="radio"
@@ -98,26 +192,47 @@
                   value="A"
                   checked
                 />
-                Família do Bagulho
+                document.getElementById("elementId")
               </label>
             </div>
-            <div class="form-check my-2 text-white-50">
+            <div class="form-check my-2 text-dark">
               <label class="form-check-label">
                 <input
                   type="radio"
                   name="inputQuestion3"
                   value="B"
                 />
-                Pequena Miss Sunshine
+                querySelector.document("elementId")
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion3"
+                  value="C"
+                />
+                Selector.document("elementId")
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion3"
+                  value="D"
+                />
+                querySelector.element("elementId")
               </label>
             </div>
           </div>
 
           <div class="my-5">
             <p class="lead font-weight-normal">
-              4. "O Rei dos Gazeteiros" é o famoso filme:
+              4. Qual é a forma correta de adicionar um evento de clique a um
+              elemento HTML com o Vanilla JS?
             </p>
-            <div class="form-check my-2 text-white-50">
+            <div class="form-check my-2 text-dark">
               <label class="form-check-label">
                 <input
                   type="radio"
@@ -125,28 +240,108 @@
                   value="A"
                   checked
                 />
-                O Lobo de Wall Street
+                elementId.onclick = function() {}
               </label>
             </div>
-            <div class="form-check my-2 text-white-50">
+            <div class="form-check my-2 text-dark">
               <label class="form-check-label">
                 <input
                   type="radio"
                   name="inputQuestion4"
                   value="B"
                 />
-                Curtindo a Vida Adoidado
+                document.addEventListener("click", function() {})
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion4"
+                  value="C"
+                />
+                elementId.click = function() {}
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion4"
+                  value="D"
+                />
+                document.attachEvent("click", function() {})
+              </label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              5. Qual é a forma correta de esconder um elemento HTML com o
+              Vanilla JS?
+            </p>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion5"
+                  value="A"
+                  checked
+                />
+                element.style.display = "none"
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion5"
+                  value="B"
+                />
+                elementId.hide()
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion5"
+                  value="C"
+                />
+                document.hideElement("elementId")
+              </label>
+            </div>
+            <div class="form-check my-2 text-dark">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  name="inputQuestion5"
+                  value="D"
+                />
+                elementId.setAttribute("visibility", "hidden")
               </label>
             </div>
           </div>
 
           <div class="text-center">
-            <button class="btn bg-primary text-light">Enviar</button>
+            <button id="btnEndQuiz" class="btn btn-lg bg-warning text-dark">Enviar</button>
           </div>
         </form>
+        
       </div>
     </div>
-
+    <div class="popup-end-quiz">
+        <div class="popup-wrapper">
+            <div class="container-popup">
+                <h1 class="title-popup-score text-center">Parabéns! Você Finalizou o Quiz</h1>
+                <button class="bg-warning btn-close-popup-score">Refazer o quiz</button>
+            </div>
+        </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>

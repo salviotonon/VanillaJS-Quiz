@@ -1,0 +1,56 @@
+body {
+  position: relative;
+}
+.easterEggs {
+  max-width: 300px;
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+.easterEggs:hover {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+.quiz-form {
+  display: none;
+}
+
+.popup-end-quiz {
+  display: none;
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup-wrapper {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.container-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  width: 320px;
+  height: 320px;
+  background-color: #fafafa;
+  margin: auto auto;
+}
+.container-popup h1 {
+  font-size: 1.75rem;
+}
+.container-popup button {
+  border: 0;
+  color: black;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
