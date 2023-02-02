@@ -9,7 +9,7 @@ O aplicativo fornece feedback sobre o desempenho do usuário e pode ser recarreg
 </div>
 
 ## Visite o site
-<a href="https://salviotonon.github.io/VanillaJS-Quiz/">salviotonon.github.io/VanillaJS-Quiz<a/>
+<a href="https://salviotonon.github.io/VanillaJS-Quiz/" target="_blank">salviotonon.github.io/VanillaJS-Quiz<a/>
 
 ## Funcionalidades
 - Mostrar formulário de quiz ao clicar no botão "Começar Quiz"
