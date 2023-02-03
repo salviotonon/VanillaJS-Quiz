@@ -20,13 +20,16 @@ body {
 }
 
 .popup-end-quiz {
-  display: none;
+  display: flex;
   position: fixed;
   background-color: transparent;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
+}
+.hidden {
+  display: none;
 }
 .popup-wrapper {
   display: flex;
@@ -52,6 +55,25 @@ body {
   border: 0;
   color: black;
   font-weight: bold;
-  padding: 1rem 2rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 8px;
+}
+
+.success {
+  border: 1px solid green;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+.failed {
+  border: 1px solid red;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+.feedback {
+  border: 1px dashed green;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  opacity: 1;
 }

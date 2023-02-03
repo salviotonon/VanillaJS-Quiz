@@ -28,12 +28,13 @@
 
     <div class="quiz py-5 bg-body-secondary">
       <div class="container">
-     <div class="d-flex justify-content-center">
+     <div class="d-flex justify-content-center" >
         <button
         type="button"
         class="btn btn-warning btn-lg"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
+        id="titleButton"
       >
         Teste os seus conhecimentos em Vanilla JS
       </button>
@@ -275,7 +276,7 @@
           </div>
           <div class="my-5">
             <p class="lead font-weight-normal">
-              5. Qual é a forma correta de esconder um elemento HTML com o
+              5. Qual é a forma correta de esconder, onde não ocupe espaço na tela,  um elemento HTML com o
               Vanilla JS?
             </p>
             <div class="form-check my-2 text-dark">
@@ -323,16 +324,21 @@
 
           <div class="text-center">
             <button id="btnEndQuiz" class="btn btn-lg bg-warning text-dark">Enviar</button>
+            <button id="refreshButton" class="btn btn-lg bg-warning text-dark hidden">Refazer Teste</button>
+            <button id="showResults" class="btn btn-lg bg-warning text-dark hidden">Ver Nota</button>
           </div>
         </form>
         
       </div>
     </div>
-    <div class="popup-end-quiz">
+    <div class="popup-end-quiz hidden">
         <div class="popup-wrapper">
             <div class="container-popup">
                 <h1 class="title-popup-score text-center">Parabéns! Você Finalizou o Quiz</h1>
-                <button class="bg-warning btn-close-popup-score">Refazer o quiz</button>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-success btn-sm text-light btn-check-answers">Ver Gabarito</button>
+                  <button class="btn-sm bg-warning btn-close-popup-score ">Refazer o quiz</button>
+                </div>
             </div>
         </div>
     </div>
